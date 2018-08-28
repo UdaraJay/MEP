@@ -1,0 +1,24 @@
+{
+  "name": "udarajay/mep",
+  "description": "Simply parse e-mails and attachments",
+  "type": "library",
+  "license": "MIT",
+  "keywords": ["parse", "email", "rfc822", "laravel"],
+  "authors": [
+    {
+      "name": "Udara Jay",
+      "email": "me@udara.io"
+    }
+  ],
+  "autoload": {
+    "psr-4" : {
+      "UJ\\" : "src/"
+    }
+  },
+  "require": {
+    "php": "^7.1.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7"
+  }
+}
