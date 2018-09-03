@@ -4,7 +4,7 @@
 [![Total Downloads](https://poser.pugx.org/udarajay/mep/downloads)](https://packagist.org/packages/udarajay/mep)
 [![License](https://poser.pugx.org/udarajay/mep/license)](https://packagist.org/packages/udarajay/mep)
 
-A minimal PHP library for parsing RAW emails.
+A minimal PHP library for parsing RAW emails (rfc2822).
 
 ## Installation
 The recommended way to install MEP is through [Composer](https://getcomposer.org/):
