@@ -4,6 +4,8 @@
 [![Total Downloads](https://poser.pugx.org/udarajay/mep/downloads)](https://packagist.org/packages/udarajay/mep)
 [![License](https://poser.pugx.org/udarajay/mep/license)](https://packagist.org/packages/udarajay/mep)
 
+**Work in progress.** 
+
 A minimal PHP library for parsing RAW emails (rfc2822).
 
 ## Installation

@@ -1,126 +1,72 @@
-Delivered-To: devudara@gmail.com\r\n
-Received: by 2002:a5d:4f10:0:0:0:0:0 with SMTP id c16-v6csp6123052wru;\r\n
-        Mon, 27 Aug 2018 19:16:46 -0700 (PDT)\r\n
-X-Google-Smtp-Source: ANB0VdZVSko6vVSHJiB+1DCEJxVnDtYk+H8rZziVXxAL6UWMjm1X+dMoKn0NGaRXSFXt8eYkd9xD\r\n
-X-Received: by 2002:a5d:6243:: with SMTP id m3-v6mr1479733wrv.179.1535422606341;\r\n
-        Mon, 27 Aug 2018 19:16:46 -0700 (PDT)\r\n
-ARC-Seal: i=1; a=rsa-sha256; t=1535422606; cv=none;\r\n
-        d=google.com; s=arc-20160816;\r\n
-        b=kylpGbrWx85C5bA5za43Y+N53b5El7oDOw9JAV2BQoxvVXQy02Dmhr+bqhl7x7/aPY\r\n
-         45073XXC8lCwBq3TosHeQJw0pwEOAVwCmYru4FzFK4+ck0JUX9PqhIZ27B/SPxtfsB42\r\n
-         +NcK+vmpVOu+8b9nISGD/RxQuhkstKknb6pWRn+ossF2z71uSxBTP0WO1KPIofkRdYhr\r\n
-         5Yaf/OlFrG6N0g+p/4QR5J5lHYuBBBXaC7rplMXYBc+iyeWppoy/WKJ37o4OB88YM3Gh\r\n
-         8ru/sIN8kNKrMaOXsNwT6idqL7FWBKVAT/gTeYXCnjIc6hbRXz+F0RvBy55vvf3pY/qm\r\n
-         6lzA==\r\n
-ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;\r\n
-        h=mime-version:spamdiagnosticmetadata:spamdiagnosticoutput\r\n
-         :content-language:accept-language:message-id:date:thread-index\r\n
-         :thread-topic:subject:to:from:dkim-signature\r\n
-         :arc-authentication-results;\r\n
-        bh=xty8ATarxpoRCZAcV9JkVtVreADiJJOyXIpoZVHT9os=;\r\n
-        b=0OIDLF27A5DweePooGzeS7LWHTjP6ARRQPKD4QJPYDnTmBMlfJMc+PQ6WzDP8lM2N9\r\n
-         3ketoDjqSjq13DmZP/G9tOsb4mxUIj/62pC0WSCLsPG9BsaWxuj167V4Bw4L6hCBExxm\r\n
-         hd6HUSw9pD90K02TbO0zfxnZiJNfpkincHsqI1ekSmj9sNu1GWxJ1s/FJsHP8TgN526F\r\n
-         MHSEPg/mV1Tj/6GOcVrjUfMdhxMZamRXzsLSMm20XcqPXvZvCuwjGuvzN7XSWwo3sM0i\r\n
-         7TQz0lUeSNh7CKsexgG+BdxqHBlEY3XvTAV3/zAv1jWCeUImRzsxE7OMHzzAfw7lETb9\r\n
-         aZ2w==\r\n
-ARC-Authentication-Results: i=1; mx.google.com;\r\n
-       dkim=pass header.i=@uwoca.onmicrosoft.com header.s=selector1-uwo-ca header.b=JrXm4qz+;\r\n
-       spf=pass (google.com: domain of tjayawa@uwo.ca designates 40.107.66.124 as permitted sender) smtp.mailfrom=tjayawa@uwo.ca\r\n
-Return-Path: <tjayawa@uwo.ca>\r\n
-Received: from CAN01-QB1-obe.outbound.protection.outlook.com (mail-eopbgr660124.outbound.protection.outlook.com. [40.107.66.124])\r\n
-        by mx.google.com with ESMTPS id g5-v6si686267wrq.200.2018.08.27.19.16.46\r\n
-        for <devudara@gmail.com>\r\n
-        (version=TLS1_2 cipher=ECDHE-RSA-AES128-SHA bits=128/128);\r\n
-        Mon, 27 Aug 2018 19:16:46 -0700 (PDT)\r\n
-Received-SPF: pass (google.com: domain of tjayawa@uwo.ca designates 40.107.66.124 as permitted sender) client-ip=40.107.66.124;\r\n
-Authentication-Results: mx.google.com;\r\n
-       dkim=pass header.i=@uwoca.onmicrosoft.com header.s=selector1-uwo-ca header.b=JrXm4qz+;\r\n
-       spf=pass (google.com: domain of tjayawa@uwo.ca designates 40.107.66.124 as permitted sender) smtp.mailfrom=tjayawa@uwo.ca\r\n
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=uwoca.onmicrosoft.com;\r\n
- s=selector1-uwo-ca;\r\n
- h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;\r\n
- bh=xty8ATarxpoRCZAcV9JkVtVreADiJJOyXIpoZVHT9os=;\r\n
- b=JrXm4qz+tKcW0iwLpNCpcDaBLtc70K6qlMTPD6WrFu4/QMUg+U15yr4c2mDcNT+KNPYag3UII9YEctRAde42qWlhd+fSEOkDsbm2WyXmK0tJauWNt4c0/32SqAecaxKXCvrWzGUcG8eAH9WBl0mIkRcyJdEQB ▶
-Received: from YTOPR0101MB2236.CANPRD01.PROD.OUTLOOK.COM (52.132.49.25) by\r\n
- YTOPR0101MB0812.CANPRD01.PROD.OUTLOOK.COM (52.132.47.145) with Microsoft SMTP\r\n
- Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id\r\n
- 15.20.1080.17; Tue, 28 Aug 2018 02:16:44 +0000\r\n
-Received: from YTOPR0101MB2236.CANPRD01.PROD.OUTLOOK.COM\r\n
- ([fe80::9d56:af80:58ad:490e]) by YTOPR0101MB2236.CANPRD01.PROD.OUTLOOK.COM\r\n
- ([fe80::9d56:af80:58ad:490e%4]) with mapi id 15.20.1080.015; Tue, 28 Aug 2018\r\n
- 02:16:44 +0000\r\n
-From: T Jayawardena <tjayawa@uwo.ca>\r\n
-To: Udara Jay <devudara@gmail.com>\r\n
-Subject: tesing concur\r\n
-Thread-Topic: tesing concur\r\n
-Thread-Index: AQHUPnUqFHc8cb3mb0aYv8H+qvFeQg==\r\n
-Date: Tue, 28 Aug 2018 02:16:43 +0000\r\n
-Message-ID: <2213c63f-44fc-4fe1-a334-cbf233931ada@Spark>\r\n
-Accept-Language: en-US\r\n
-Content-Language: en-US\r\n
-X-MS-Has-Attach:\r\n
-X-MS-TNEF-Correlator:\r\n
-authentication-results: spf=none (sender IP is ) smtp.mailfrom=tjayawa@uwo.ca; \r\n
-x-originating-ip: [99.249.134.85]\r\n
-x-ms-publictraffictype: Email\r\n
-x-microsoft-exchange-diagnostics:\r\n
- 1;YTOPR0101MB0812;6:Dzh1NXZg083JTa70b76U8I1wMpdbuA8GmmuEX5R03p9jF2Ob35kgGHQlW3VkvGNmliBQhdyxJQAe6nNGHvKLtu842JKTYJC3axlrugLXisfa9bsVpUx1wJJHK5j0pXpVZQxWITvzgXv ▶
-x-ms-exchange-antispam-srfa-diagnostics: SOS;\r\n
-x-ms-office365-filtering-correlation-id: e5b6c613-8052-4cc3-eda5-08d60c8c4ce0\r\n
-x-microsoft-antispam:\r\n
- BCL:0;PCL:0;RULEID:(7020095)(4652040)(8989137)(4534165)(4627221)(201703031133081)(201702281549075)(8990107)(5600074)(711020)(2017052603328)(7153060)(7193020);S ▶
-x-ms-traffictypediagnostic: YTOPR0101MB0812:\r\n
-x-microsoft-antispam-prvs:\r\n
- <YTOPR0101MB0812E5493A6FA19C75B0AACFCA0A0@YTOPR0101MB0812.CANPRD01.PROD.OUTLOOK.COM>\r\n
-x-exchange-antispam-report-test: UriScan:;\r\n
-x-ms-exchange-senderadcheck: 1\r\n
-x-exchange-antispam-report-cfa-test:\r\n
- BCL:0;PCL:0;RULEID:(6040522)(2401047)(5005006)(8121501046)(3231311)(944501410)(52105095)(10201501046)(3002001)(93006095)(93001095)(149027)(150027)(6041310)(201 ▶
-x-forefront-prvs: 077884B8B5\r\n
-x-forefront-antispam-report:\r\n
- SFV:NSPM;SFS:(10019020)(7916004)(136003)(366004)(39860400002)(346002)(396003)(376002)(52294003)(199004)(189003)(6916009)(68736007)(8936002)(54896002)(348070000 ▶
-received-spf: None (protection.outlook.com: uwo.ca does not designate\r\n
- permitted sender hosts)\r\n
-x-microsoft-antispam-message-info:\r\n
- Rmf1fsgFJgfPF/x7dQYhTeBivgSiW6BA3eBeIQG8maCejBGwvIDFTgq6P1W2Afcm5ba2PsSUQImPV7iEoI/TfVvI/b9Tx9+D8HFegrqf5li8eBd/aT5fpKPVMF0wzlU1LJ2xlodgGsjdfbCpcd0sR+QsOH7HIaU ▶
-spamdiagnosticoutput: 1:99\r\n
-spamdiagnosticmetadata: NSPM\r\n
-Content-Type: multipart/alternative;\r\n
-\tboundary="_000_2213c63f44fc4fe1a334cbf233931adaSpark_"\r\n
-MIME-Version: 1.0\r\n
-X-OriginatorOrg: uwo.ca\r\n
-X-MS-Exchange-CrossTenant-Network-Message-Id: e5b6c613-8052-4cc3-eda5-08d60c8c4ce0\r\n
-X-MS-Exchange-CrossTenant-originalarrivaltime: 28 Aug 2018 02:16:44.0705\r\n
- (UTC)\r\n
-X-MS-Exchange-CrossTenant-fromentityheader: Hosted\r\n
-X-MS-Exchange-CrossTenant-id: ad93a64d-ad0d-4ecd-b2fd-e53ce15965be\r\n
-X-MS-Exchange-Transport-CrossTenantHeadersStamped: YTOPR0101MB0812\r\n
-\r\n
---_000_2213c63f44fc4fe1a334cbf233931adaSpark_\r\n
-Content-Type: text/plain; charset="utf-8"\r\n
-Content-Transfer-Encoding: base64\r\n
-\r\n
-VEhpcyBpcyBhIHRlc3QgZW1haWwgdG8gc2VlIGhvdyB0aGluZ3Mgd29yayBvdXIgd2l0aA0KDQpj\r\n
-b25jdXINCg0KZW1haWwsIHRoaXMgd2lsbCBob3BlZnVsbHkgbG9vayByaWdodC4NCg0KVGVzdCB0\r\n
-aHJlYWRpbmc6IEZJUlNUIEVNQUlMLg0K\r\n
-\r\n
---_000_2213c63f44fc4fe1a334cbf233931adaSpark_\r\n
-Content-Type: text/html; charset="utf-8"\r\n
-Content-ID: <5076A82DB3D6154D8C8A4B5EB4591F96@CANPRD01.PROD.OUTLOOK.COM>\r\n
-Content-Transfer-Encoding: base64\r\n
-\r\n
-PGh0bWwgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiPg0KPGhlYWQ+DQo8bWV0\r\n
-YSBodHRwLWVxdWl2PSJDb250ZW50LVR5cGUiIGNvbnRlbnQ9InRleHQvaHRtbDsgY2hhcnNldD11\r\n
-dGYtOCI+DQo8dGl0bGU+PC90aXRsZT4NCjwvaGVhZD4NCjxib2R5Pg0KPGRpdiBuYW1lPSJtZXNz\r\n
-YWdlQm9keVNlY3Rpb24iIHN0eWxlPSJmb250LXNpemU6IDE0cHg7IGZvbnQtZmFtaWx5OiAtYXBw\r\n
-bGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsIHNhbnMtc2VyaWY7Ij4NClRIaXMgaXMgYSB0\r\n
-ZXN0IGVtYWlsIHRvIHNlZSBob3cgdGhpbmdzIHdvcmsgb3VyIHdpdGgmbmJzcDsNCjxkaXY+PGJy\r\n
-Pg0KPC9kaXY+DQo8ZGl2PmNvbmN1cjwvZGl2Pg0KPGRpdj48YnI+DQo8L2Rpdj4NCjxkaXY+ZW1h\r\n
-aWwsIHRoaXMgd2lsbCBob3BlZnVsbHkgbG9vayByaWdodC4mbmJzcDs8L2Rpdj4NCjxkaXY+PGJy\r\n
-Pg0KPC9kaXY+DQo8ZGl2PlRlc3QgdGhyZWFkaW5nOiBGSVJTVCBFTUFJTC48L2Rpdj4NCjwvZGl2\r\n
-Pg0KPGRpdiBuYW1lPSJtZXNzYWdlUmVwbHlTZWN0aW9uIiBzdHlsZT0iZm9udC1zaXplOiAxNHB4\r\n
-OyBmb250LWZhbWlseTogLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCBzYW5zLXNl\r\n
-cmlmOyI+DQo8ZGl2PjwvZGl2Pg0KPC9kaXY+DQo8L2JvZHk+DQo8L2h0bWw+DQo=\r\n
-\r\n
---_000_2213c63f44fc4fe1a334cbf233931adaSpark_--\r\n
+Delivered-To: devudara@gmail.com
+Received: by 2002:a5d:4f10:0:0:0:0:0 with SMTP id c16-v6csp6123052wru;
+        Mon, 27 Aug 2018 19:16:46 -0700 (PDT)
+X-Google-Smtp-Source: ANB0VdZVSko6vVSHJiB+1DCEJxVnDtYk+H8rZziVXxAL6UWMjm1X+dMoKn0NGaRXSFXt8eYkd9xD
+X-Received: by 2002:a5d:6243:: with SMTP id m3-v6mr1479733wrv.179.1535422606341;
+        Mon, 27 Aug 2018 19:16:46 -0700 (PDT)
+Return-Path: <tjayawa@uwo.ca>
+Received: from CAN01-QB1-obe.outbound.protection.outlook.com (mail-eopbgr660124.outbound.protection.outlook.com. [40.107.66.124])
+        by mx.google.com with ESMTPS id g5-v6si686267wrq.200.2018.08.27.19.16.46
+        for <devudara@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Mon, 27 Aug 2018 19:16:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of tjayawa@uwo.ca designates 40.107.66.124 as permitted sender) client-ip=40.107.66.124;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@uwoca.onmicrosoft.com header.s=selector1-uwo-ca header.b=JrXm4qz+;
+       spf=pass (google.com: domain of tjayawa@uwo.ca designates 40.107.66.124 as permitted sender) smtp.mailfrom=tjayawa@uwo.ca
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=uwoca.onmicrosoft.com;
+ s=selector1-uwo-ca;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=xty8ATarxpoRCZAcV9JkVtVreADiJJOyXIpoZVHT9os=;
+ b=JrXm4qz+tKcW0iwLpNCpcDaBLtc70K6qlMTPD6WrFu4/QMUg+U15yr4c2mDcNT+KNPYag3UII9YEctRAde42qWlhd+fSEOkDsbm2WyXmK0tJauWNt4c0/32SqAecaxKXCvrWzGUcG8eAH9WBl0mIkRcyJdEQBRSHZI2JjyTBixU=
+Received: from YTOPR0101MB2236.CANPRD01.PROD.OUTLOOK.COM (52.132.49.25) by
+ YTOPR0101MB0812.CANPRD01.PROD.OUTLOOK.COM (52.132.47.145) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.1080.17; Tue, 28 Aug 2018 02:16:44 +0000
+Received: from YTOPR0101MB2236.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9d56:af80:58ad:490e]) by YTOPR0101MB2236.CANPRD01.PROD.OUTLOOK.COM
+ ([fe80::9d56:af80:58ad:490e%4]) with mapi id 15.20.1080.015; Tue, 28 Aug 2018
+ 02:16:44 +0000
+From: T Jayawardena <tjayawa@uwo.ca>
+To: Udara Jay <devudara@gmail.com>
+Subject: tesing concur
+Thread-Topic: tesing concur
+Thread-Index: AQHUPnUqFHc8cb3mb0aYv8H+qvFeQg==
+Date: Tue, 28 Aug 2018 02:16:43 +0000
+Message-ID: <2213c63f-44fc-4fe1-a334-cbf233931ada@Spark>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: spf=none (sender IP is ) smtp.mailfrom=tjayawa@uwo.ca;
+x-originating-ip: [99.249.134.85]
+Content-Type: multipart/alternative;
+	boundary="_000_2213c63f44fc4fe1a334cbf233931adaSpark_"
+MIME-Version: 1.0
+--_000_2213c63f44fc4fe1a334cbf233931adaSpark_
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+VEhpcyBpcyBhIHRlc3QgZW1haWwgdG8gc2VlIGhvdyB0aGluZ3Mgd29yayBvdXIgd2l0aA0KDQpj
+b25jdXINCg0KZW1haWwsIHRoaXMgd2lsbCBob3BlZnVsbHkgbG9vayByaWdodC4NCg0KVGVzdCB0
+aHJlYWRpbmc6IEZJUlNUIEVNQUlMLg0K
+
+--_000_2213c63f44fc4fe1a334cbf233931adaSpark_
+Content-Type: text/html; charset="utf-8"
+Content-ID: <5076A82DB3D6154D8C8A4B5EB4591F96@CANPRD01.PROD.OUTLOOK.COM>
+Content-Transfer-Encoding: base64
+
+PGh0bWwgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiPg0KPGhlYWQ+DQo8bWV0
+YSBodHRwLWVxdWl2PSJDb250ZW50LVR5cGUiIGNvbnRlbnQ9InRleHQvaHRtbDsgY2hhcnNldD11
+dGYtOCI+DQo8dGl0bGU+PC90aXRsZT4NCjwvaGVhZD4NCjxib2R5Pg0KPGRpdiBuYW1lPSJtZXNz
+YWdlQm9keVNlY3Rpb24iIHN0eWxlPSJmb250LXNpemU6IDE0cHg7IGZvbnQtZmFtaWx5OiAtYXBw
+bGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsIHNhbnMtc2VyaWY7Ij4NClRIaXMgaXMgYSB0
+ZXN0IGVtYWlsIHRvIHNlZSBob3cgdGhpbmdzIHdvcmsgb3VyIHdpdGgmbmJzcDsNCjxkaXY+PGJy
+Pg0KPC9kaXY+DQo8ZGl2PmNvbmN1cjwvZGl2Pg0KPGRpdj48YnI+DQo8L2Rpdj4NCjxkaXY+ZW1h
+aWwsIHRoaXMgd2lsbCBob3BlZnVsbHkgbG9vayByaWdodC4mbmJzcDs8L2Rpdj4NCjxkaXY+PGJy
+Pg0KPC9kaXY+DQo8ZGl2PlRlc3QgdGhyZWFkaW5nOiBGSVJTVCBFTUFJTC48L2Rpdj4NCjwvZGl2
+Pg0KPGRpdiBuYW1lPSJtZXNzYWdlUmVwbHlTZWN0aW9uIiBzdHlsZT0iZm9udC1zaXplOiAxNHB4
+OyBmb250LWZhbWlseTogLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCBzYW5zLXNl
+cmlmOyI+DQo8ZGl2PjwvZGl2Pg0KPC9kaXY+DQo8L2JvZHk+DQo8L2h0bWw+DQo=
+
+--_000_2213c63f44fc4fe1a334cbf233931adaSpark_--
