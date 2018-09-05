@@ -2,42 +2,11 @@
 
 namespace UJ\MEP;
 
-class EmailHeadersParser
+class EmailHeadersParser extends EmailModel
 {
 
-  protected $array = null;
-
-  public function getFrom(){
-    return $this->array['From'];
-  }
-
-  public function getTo(){
-    return $this->array['To'];
-  }
-
-  public function getSubject(){
-    return $this->array['Subject'];
-  }
-
-  public function getMessageID(){
-    return $this->array['Message-ID'];
-  }
-
-  public function getContentType(){
-    return $this->array['Content-Type'];
-  }
-
-  public function getContentLanguage(){
-    return $this->array['Content-Language'];
-  }
-
-  public function getMimeVersion(){
-    return $this->array['MIME-Version'];
-  }
-
-  public static function parse($arrayed)
+  public static function parse(EmailModel $parsed, $arrayed)
   {
-    $headers = new EmailHeadersParser;
     $arrayedHeaders = explode("\n", $arrayed[0]);
     $namedHeaders = array();
 
@@ -48,19 +17,16 @@ class EmailHeadersParser
       }
     });
 
-    // Useful to extract
-    // 1. Delivered-To
-    // 2. Return-Path
-    // 3. From
-    // 4. To
-    // 5. Subject
-    // 6. Message-ID (think this is Gmail specific)
-    // 7. Content-Type
-    // 8. Content-Language
-    // 9. MIME-Version
+    $parsed->setHeaders($arrayed[0]);
+    $parsed->setDeliveredTo($namedHeaders['Delivered-To']);
+    $parsed->setFrom($namedHeaders['From']);
+    $parsed->setTo($namedHeaders['To']);
+    $parsed->setSubject($namedHeaders['Subject']);
+    $parsed->setContentType($namedHeaders['Content-Type']);
+    $parsed->setContentLanguage($namedHeaders['Content-Language']);
+    $parsed->setMessageId($namedHeaders['Message-ID']);
+    $parsed->setMimeVersion($namedHeaders['MIME-Version']);
 
-    $headers->array = $namedHeaders;
-
-    return $headers;
+    return $parsed;
   }
 }
