@@ -22,7 +22,7 @@ require 'vendor/autoload.php';
 
 use UJ\MEP\EmailParser;
 
-// init by passing in a raw email as a string
+// Init by passing in a raw email as a string
 $parser = EmailParser::parse($raw); 
 
 // Access un-parsed parts
@@ -46,6 +46,6 @@ $fragments = $parser->getFragments();
 
 
 ## Todo
-- [ ] Parse headers with fallback
+- [x] Parse headers with fallback
 - [ ] Parse HTML body in fragments with fallback to Text
 - [ ] Generate raw email (threaded) messages for Gmail
