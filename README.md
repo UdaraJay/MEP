@@ -17,7 +17,7 @@ composer require udarajay/mep
 ```
 
 ## Usage
-```
+```php
 require 'vendor/autoload.php';
 
 use UJ\MEP\EmailParser;
