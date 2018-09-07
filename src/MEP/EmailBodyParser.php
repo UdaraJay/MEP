@@ -12,10 +12,12 @@ class EmailBodyParser extends EmailModel
       if($key == 0 ) continue;
       $subArrayed = explode("\n\n", $value);
 
-      if(count($subArrayed) > 1){
+      if(count($subArrayed) > 1) {
         $headers = $subArrayed[0];
         $body = $subArrayed[1];
         $decodedBody= quoted_printable_decode(EmailBodyParser::base64url_decode($body));
+
+        $fragment = new EmailModelFragment;
       }
     }
 

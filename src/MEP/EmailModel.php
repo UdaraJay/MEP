@@ -17,6 +17,7 @@ class EmailModel
   protected $contentType = null;
   protected $contentLanguage = null;
   protected $mimeVersion = null;
+  protected $fragments = array();
 
   /**
    * @return null
@@ -24,6 +25,22 @@ class EmailModel
   public function getHeaders()
   {
     return $this->headers;
+  }
+
+  /**
+   * @return array
+   */
+  public function getFragments(): array
+  {
+    return $this->fragments;
+  }
+
+  /**
+   * @param array $fragments
+   */
+  public function setFragments(array $fragments): void
+  {
+    $this->fragments = $fragments;
   }
 
   /**
