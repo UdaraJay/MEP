@@ -16,6 +16,35 @@ The recommended way to install MEP is through [Composer](https://getcomposer.org
 composer require udarajay/mep
 ```
 
+## Usage
+```
+require 'vendor/autoload.php';
+
+use UJ\MEP\EmailParser;
+
+// init by passing in a raw email as a string
+$parser = EmailParser::parse($raw); 
+
+// Access un-parsed parts
+$parser->getRaw();
+$parser->getBody();
+$parser->getHeaders();
+
+// Parsed header content
+$parser->getMessageId();
+$parser->getFrom();
+$parser->getTo();
+$parser->getSubject();
+$parser->getDeliveredTo();
+$parser->getContentType();
+$parser->getContentLanguage();
+$parser->getMimeVersion();
+
+// Parsed fragments (Message parts)
+$fragments = $parser->getFragments();
+```
+
+
 ## Todo
 - [ ] Parse headers with fallback
 - [ ] Parse HTML body in fragments with fallback to Text
