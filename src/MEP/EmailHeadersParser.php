@@ -17,15 +17,15 @@ class EmailHeadersParser extends EmailModel
       }
     });
 
-    $parsed->setHeaders($arrayed[0]);
-    $parsed->setDeliveredTo($namedHeaders['Delivered-To']);
-    $parsed->setFrom($namedHeaders['From']);
-    $parsed->setTo($namedHeaders['To']);
-    $parsed->setSubject($namedHeaders['Subject']);
-    $parsed->setContentType($namedHeaders['Content-Type']);
-    $parsed->setContentLanguage($namedHeaders['Content-Language']);
-    $parsed->setMessageId($namedHeaders['Message-ID']);
-    $parsed->setMimeVersion($namedHeaders['MIME-Version']);
+    $parsed->setHeaders(isset($arrayed[0]) ? $arrayed[0] : null);
+    $parsed->setDeliveredTo(isset($namedHeaders['Delivered-To']) ? $namedHeaders['Delivered-To'] : null);
+    $parsed->setFrom(isset($namedHeaders['From']) ? $namedHeaders['From'] : null);
+    $parsed->setTo(isset($namedHeaders['To']) ? $namedHeaders['To'] : null);
+    $parsed->setSubject(isset($namedHeaders['Subject']) ? $namedHeaders['Subject'] : null);
+    $parsed->setContentType(isset($namedHeaders['Content-Type']) ? $namedHeaders['Content-Type'] : null);
+    $parsed->setContentLanguage(isset($namedHeaders['Content-Language']) ? $namedHeaders['Content-Language'] : null);
+    $parsed->setMessageId(isset($namedHeaders['Message-ID']) ? $namedHeaders['Message-ID'] : null);
+    $parsed->setMimeVersion(isset($namedHeaders['MIME-Version']) ? $namedHeaders['MIME-Version'] : null);
 
     return $parsed;
   }
