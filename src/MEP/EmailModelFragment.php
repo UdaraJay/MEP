@@ -2,13 +2,47 @@
 
 namespace UJ\MEP;
 
-class EmailModelFragment extends EmailModel
+class EmailModelFragment
 {
   protected $messageId = null;
   protected $contentType = null;
   protected $contentId = null;
   protected $contentTransferEncoding = null;
-  protected $decodedBody = null;
+  protected $decodedHtmlBody = null;
+  protected $decodedTextBody = null;
+  protected $isHtml = null;
+
+  /**
+   * @return null
+   */
+  public function getDecodedHtmlBody()
+  {
+    return $this->decodedHtmlBody;
+  }
+
+  /**
+   * @param null $decodedHtmlBody
+   */
+  public function setDecodedHtmlBody($decodedHtmlBody): void
+  {
+    $this->decodedHtmlBody = $decodedHtmlBody;
+  }
+
+  /**
+   * @return null
+   */
+  public function getDecodedTextBody()
+  {
+    return $this->decodedTextBody;
+  }
+
+  /**
+   * @param null $decodedTextBody
+   */
+  public function setDecodedTextBody($decodedTextBody): void
+  {
+    $this->decodedTextBody = $decodedTextBody;
+  }
 
   /**
    * @return null
@@ -16,6 +50,22 @@ class EmailModelFragment extends EmailModel
   public function getMessageId()
   {
     return $this->messageId;
+  }
+
+  /**
+   * @return null
+   */
+  public function getisHtml()
+  {
+    return $this->isHtml;
+  }
+
+  /**
+   * @param null $isHtml
+   */
+  public function setIsHtml($isHtml): void
+  {
+    $this->isHtml = $isHtml;
   }
 
   /**
@@ -74,19 +124,4 @@ class EmailModelFragment extends EmailModel
     $this->contentTransferEncoding = $contentTransferEncoding;
   }
 
-  /**
-   * @return null
-   */
-  public function getDecodedBody()
-  {
-    return $this->decodedBody;
-  }
-
-  /**
-   * @param null $decodedBody
-   */
-  public function setDecodedBody($decodedBody): void
-  {
-    $this->decodedBody = $decodedBody;
-  }
 }
