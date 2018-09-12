@@ -13,7 +13,7 @@ class EmailBodyParser extends EmailModel
     foreach($arrayed as $key=>$value) {
 
       if($key == 0 ) continue;
-      $subArrayed = explode("\n\n", $value);
+      $subArrayed = explode("\r\n\r\n", $value, 2);
 
       if(count($subArrayed) > 1) {
         $headers = $subArrayed[0];
