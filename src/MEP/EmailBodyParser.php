@@ -80,7 +80,13 @@ class EmailBodyParser extends EmailModel
   }
 
   public static function base64url_decode($data) {
-    return base64_decode(str_pad(strtr($data, '-_', '+/'), strlen($data) % 4, '=', STR_PAD_RIGHT));
+    $decoded = null;
+    if ( base64_encode(base64_decode($data)) === $data){
+      $decoded = base64_decode(str_pad(strtr($data, '-_', '+/'), strlen($data) % 4, '=', STR_PAD_RIGHT));
+    } else {
+      $decoded = $data;
+    }
+    return $decoded;
   }
 
 }
