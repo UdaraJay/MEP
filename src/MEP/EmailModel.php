@@ -18,6 +18,40 @@ class EmailModel
   protected $contentLanguage = null;
   protected $mimeVersion = null;
   protected $fragments = array();
+  protected $isDraft = null;
+  protected $labels = array();
+
+  /**
+   * @return null
+   */
+  public function getisDraft()
+  {
+    return $this->isDraft;
+  }
+
+  /**
+   * @param null $isDraft
+   */
+  public function setIsDraft($isDraft): void
+  {
+    $this->isDraft = $isDraft;
+  }
+
+  /**
+   * @return array
+   */
+  public function getLabels(): array
+  {
+    return $this->labels;
+  }
+
+  /**
+   * @param array $labels
+   */
+  public function setLabels(array $labels): void
+  {
+    $this->labels = $labels;
+  }
 
   /**
    * @return null
