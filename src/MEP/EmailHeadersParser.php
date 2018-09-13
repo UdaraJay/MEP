@@ -28,8 +28,6 @@ class EmailHeadersParser extends EmailModel
       }
     });
 
-    var_dump($namedHeaders);
-
     $parsed->setHeaders(isset($arrayed[0]) ? $arrayed[0] : null);
     $parsed->setDeliveredTo(isset($namedHeaders['Delivered-To']) ? $namedHeaders['Delivered-To'] : null);
     $parsed->setFrom(isset($namedHeaders['From']) ? $namedHeaders['From'] : null);
