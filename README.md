@@ -6,10 +6,11 @@
 
 A minimal PHP library for parsing RAW emails (rfc2822).
 
-## Status
-**Work in progress.**  Currently works well with Gmail emails. It's able to get you useful header information 
-and parse the HTML body of an email as fragments for rendering and threading. 
-
+## Motivation
+Creating the simplest possible parser for taking a raw email and converting it to a simple
+decoded object with easily accessible headers and body parts (threaded emails) that
+can be rendered beautifully. 
+  
 ## Installation
 The recommended way to install MEP is through [Composer](https://getcomposer.org/):
 ```

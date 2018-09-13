@@ -8,14 +8,27 @@ class EmailHeadersParser extends EmailModel
   public static function parse(EmailModel $parsed, $arrayed)
   {
     $arrayedHeaders = explode("\n", $arrayed[0]);
-    $namedHeaders = array();
+    $lastHeader = 0;
 
+    // Concat tabbed header content to the right header
+    foreach($arrayedHeaders as $key=>$value) {
+      if(ltrim($value) != $value) {
+        $arrayedHeaders[$lastHeader] = $arrayedHeaders[$lastHeader] . $value;
+        unset($arrayedHeaders[$key]);
+      } else {
+        $lastHeader = $key;
+      }
+    }
+
+    $namedHeaders = array();
     array_walk($arrayedHeaders, function($v, $k) use (&$namedHeaders) {
       $header = explode(': ', $v);
       if(count($header) == 2) {
         $namedHeaders[$header[0]] = $header[1];
       }
     });
+
+    var_dump($namedHeaders);
 
     $parsed->setHeaders(isset($arrayed[0]) ? $arrayed[0] : null);
     $parsed->setDeliveredTo(isset($namedHeaders['Delivered-To']) ? $namedHeaders['Delivered-To'] : null);
