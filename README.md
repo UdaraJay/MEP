@@ -48,5 +48,5 @@ $fragments = $parser->getFragments();
 
 ## Todo
 - [x] Parse headers with fallback
-- [ ] Parse HTML body in fragments with fallback to Text
+- [x] Parse HTML body in fragments with fallback to Text
 - [ ] Generate raw email (threaded) messages for Gmail

@@ -1,6 +1,6 @@
 <?php
 
-use UJ\MEP\EmailParser;
+use UJ\MEP\EmailDethreader;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -11,9 +11,28 @@ final class EmailWithoutAttachmentTest extends TestCase
 {
   public function testDefaultTypeWithBody()
   {
-    $file = __DIR__.'/SampleEmails/email_without_attachment.txt';
-    $this->assertEquals('382084092df7b7adeb9767f9af93ec76', md5_file($file));
-    $fileContents = file_get_contents($file);
-    $parser = EmailParser::parse($fileContents);
+    $directory = __DIR__.'/SampleEmails/internal/';
+    $emails = array();
+
+    if (! is_dir($directory)) {
+      exit('Invalid diretory path');
+    }
+
+    $files = array();
+
+    foreach (scandir($directory) as $file) {
+      if ('.' === $file) continue;
+      if ('..' === $file) continue;
+
+      $files[] = $file;
+    }
+
+    foreach($files as $file){
+      $file = $directory . $file;
+      $fileContents = file_get_contents($file);
+      array_push($emails, $fileContents);
+    }
+
+    $parsed = EmailDethreader::dethread($emails);
   }
 }
