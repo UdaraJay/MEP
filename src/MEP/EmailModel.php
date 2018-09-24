@@ -20,6 +20,40 @@ class EmailModel
   protected $fragments = array();
   protected $isDraft = null;
   protected $labels = array();
+  protected $date = null;
+  protected $inReplyTo = null;
+
+  /**
+   * @return null
+   */
+  public function getInReplyTo()
+  {
+    return $this->inReplyTo;
+  }
+
+  /**
+   * @param null $inReplyTo
+   */
+  public function setInReplyTo($inReplyTo): void
+  {
+    $this->inReplyTo = $inReplyTo;
+  }
+
+  /**
+   * @return null
+   */
+  public function getDate()
+  {
+    return $this->date;
+  }
+
+  /**
+   * @param null $date
+   */
+  public function setDate($date): void
+  {
+    $this->date = $date;
+  }
 
   /**
    * @return null

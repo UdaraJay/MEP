@@ -1,0 +1,905 @@
+Return-Path: <devudara@gmail.com>
+Received: from [172.30.22.37] (nexus-3.wireless.uwo.ca. [129.100.253.74])
+        by smtp.gmail.com with ESMTPSA id p70-v6sm3090802itb.3.2018.09.06.12.07.53
+        for <grahamlexa@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 06 Sep 2018 12:07:54 -0700 (PDT)
+Date: Thu, 6 Sep 2018 15:07:47 -0400
+From: Udara Jay <devudara@gmail.com>
+To: Lexa Graham <grahamlexa@gmail.com>
+Message-ID: <ef06cdbd-c80b-444e-8330-26962ae257db@Spark>
+In-Reply-To: <CAPDV4=C8m1w5s+yUMP_U9CcMKLOfp0mCrsx-6BNNUvLfPUzMZQ@mail.gmail.com>
+References: <CADNAVEQZRhogqza35icm-a4TU0nHXCTtYhrXSRJ3fJGQEYcFaw@mail.gmail.com>
+ <CAPDV4=AC2V7i1T-0yC+iRfGmn04NmDxxOM3pHyEV8+vB=Ocdag@mail.gmail.com>
+ <CAPz_BHYrjnZgYtu_0K-Y7ZOb81mJ2Ns+qZN8T-wjJ4JcBnXN=Q@mail.gmail.com>
+ <CAPDV4=BH=8uni-w-qWKyM1Qz68O=pEdzK-zetjAWb42HvDesCA@mail.gmail.com>
+ <bb8344b3-6c85-4ffe-a281-e7b4012a2b41@Spark>
+ <CAPDV4=AuNxQ5p5y0QvCe7FpKJ-qs4zvh6MZGBtVA_CE7gxRiNg@mail.gmail.com>
+ <CAPz_BHah5WDzQYjCQv==6Mvh4KTN2fdzGF2-gHnyxbP1pxG-+g@mail.gmail.com>
+ <CAPDV4=APgosQCq4rfjYDKQDwLMMjV-dffwzN1B7eMC3LZzgyYw@mail.gmail.com>
+ <CAPz_BHZKOOsnSG7OuSZnxhM-cEgYEkcxnJq4nre+9-9GE-xzjg@mail.gmail.com>
+ <CAPDV4=D_RU931g6LN-Cz8_qk-mcDkPyc+a+4xgYiDzpZ6dN52w@mail.gmail.com>
+ <d4064b46-f719-4630-adc2-c1bc6efdf225@Spark>
+ <CAPz_BHYp6xKUDynonWfUAR9YfDRgp=9p5f=GfsxWYrwr2ZKjBw@mail.gmail.com>
+ <CAPDV4=C3fXfDKnD-V-Zt4FKMYu7SaeB73xhT8n-u1WJC6OYukA@mail.gmail.com>
+ <CAPDV4=DoH_4zrVgfFggbS5sTtfA0Qa0_kpQ-OWTUFv+jWD59Hw@mail.gmail.com>
+ <05121da1-93b3-44a4-85ae-54af9afb9d40@Spark>
+ <CAPDV4=C8m1w5s+yUMP_U9CcMKLOfp0mCrsx-6BNNUvLfPUzMZQ@mail.gmail.com>
+Subject: Re: intro!
+X-Readdle-Message-ID: ef06cdbd-c80b-444e-8330-26962ae257db@Spark
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="5b917b08_74b0dc51_8ebb"
+
+--5b917b08_74b0dc51_8ebb
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+Hey,
+
+Hah I can Imagine, yea - for permissions 755 in should have worked, but m=
+aybe it=E2=80=99s just a weird thing about local. Should work when you pu=
+t it online. Let me know if you run into any trouble then.
+
+lol it will be a bit slow to get a hang of the wordpress theme structure=21=
+
+
+Cheers,
+
+Udara Jay
+m: +1 519 697 7591
+w: udara.io
+On Sep 5, 2018, 3:48 PM -0400, Lexa Graham <grahamlexa=40gmail.com>, wrot=
+e:
+> Haha no worries, I took the day off out of frustration anyway=21 I even=
+tually figured out how to=C2=A0connect to the server (i couldn't change p=
+ermissions without doing so anyway) but changing the permissions to 755 a=
+nd 766 didn't work (for directories, files are 644) so I had to do the dr=
+eaded 777, which finally got it working. I'm going to change the permissi=
+ons back once I upload it to the domain, that should work right=3F
+>
+> Thanks again=21 Now I'm just trying to figure out the theme's css stuff=
+, it's going alright so far haha just slow.
+>
+> > On Wed, Sep 5, 2018 at 8:08 AM Udara Jay <devudara=40gmail.com> wrote=
+:
+> > > Hey Lexa,
+> > >
+> > > Sorry for the late reply - for filezilla you can=E2=80=99t connect =
+to your local server; but if filezilla
+> > > is open with no server connected you can just connect to it by brow=
+sing to the LAMP drive (using the left size portion on your screenshot).
+> > >
+> > > Also file permissions should only affect the wp-contents folder; so=
+ if you change the permissions for that it should work.
+> > >
+> > > Let me know if that works=3F
+> > >
+> > > Best,
+> > > On Sep 3, 2018, 7:10 PM -0400, Lexa Graham <grahamlexa=40gmail.com>=
+, wrote:
+> > > > Hi Udara,
+> > > >
+> > > > Wordpress is as frustrating as i imagined haha.
+> > > >
+> > > > Ok so I can't upload any media because of this error:
+> > > >
+> > > > =22Unable to create directory wp-content/uploads/. Is its parent =
+directory writable by the server=3F=22
+> > > >
+> > > > 1. i added a folder named uploads in wp-content. did not work.
+> > > > 2. through =22get info=22 i=C2=A0changed the permissions to =22re=
+ad & write=22 on everything (except public) for htdocs/wordpress and all =
+the=C2=A0contained folders. did not work.
+> > > > 3. i downloaded filezilla to change the permissions, but i can't =
+connect to the server because i don't know the host or the username/passw=
+ord.
+> > > >
+> > > > Most sites say just put your domain, but i haven't connected my d=
+omain to wordpress yet. Plus i'm just trying to=C2=A0change the wordpress=
+ permissions, but it's located in my htdocs folder, which (i assume) is t=
+he folder who's permission i have to=C2=A0change.
+> > > >
+> > > > How=C2=A0can i connect the server=C2=A0to =46ileZilla to=C2=A0cha=
+nge the permissions=3F
+> > > >
+> > > > it seems insane that i would have to go through this process just=
+ to upload an image.
+> > > >
+> > > >
+> > > > > On Mon, Sep 3, 2018 at 3:00 PM Lexa Graham <grahamlexa=40gmail.=
+com> wrote:
+> > > > > > Got it=21 I signed on and everything, see you shortly=21
+> > > > > >
+> > > > > > > On Mon, Sep 3, 2018 at 11:24 AM Udara Jay <devudara=40gmail=
+.com> wrote:
+> > > > > > > > Hey Lexa=21
+> > > > > > > >
+> > > > > > > > Here's a link to the chat:=C2=A0https://hangouts.google.c=
+om/call/kXe3=462hjC3dkUbks38WYAAEE=C2=A0(You can just click it at 3pm and=
+ hopefully it should work). Otherwise my phone is 519 697 7591 if it give=
+s you any trouble. I'll be online at 3pm.
+> > > > > > > >
+> > > > > > > > Cheers,
+> > > > > > > >
+> > > > > > > > Udara Jayawardena
+> > > > > > > >
+> > > > > > > > c:=C2=A0=C2=A0+1 519 697 7591
+> > > > > > > > w:=C2=A0https://udara.io
+> > > > > > > >
+> > > > > > > >
+> > > > > > > >
+> > > > > > > > > On =46ri, Aug 31, 2018 at 10:12 PM Udara Jay <devudara=40=
+gmail.com> wrote:
+> > > > > > > > > > Hey=21 Yup still works for me :) You don=E2=80=99t ne=
+ed to download anything - I=E2=80=99ll send you a link and it=E2=80=99ll =
+just open on your browser.
+> > > > > > > > > >
+> > > > > > > > > > Cheers=21
+> > > > > > > > > > On Aug 30, 2018, 3:28 PM -0400, Lexa Graham <grahamle=
+xa=40gmail.com>, wrote:
+> > > > > > > > > > > ahaha no worries=21 do i have to download anything =
+for google hangouts at all=3F If not, great, we're still on for Monday, r=
+ight=3F
+> > > > > > > > > > >
+> > > > > > > > > > > > On Wed, Aug 29, 2018 at 1:10 PM Udara Jay <devuda=
+ra=40gmail.com> wrote:
+> > > > > > > > > > > > > Aw man, I was just working in Toronto for the s=
+ummer and just left for London, so in-person prolly won't work out :/
+> > > > > > > > > > > > >
+> > > > > > > > > > > > >
+> > > > > > > > > > > > > Udara Jayawardena
+> > > > > > > > > > > > >
+> > > > > > > > > > > > > c:=C2=A0=C2=A0+1 519 697 7591
+> > > > > > > > > > > > > w:=C2=A0https://udara.io
+> > > > > > > > > > > > >
+> > > > > > > > > > > > >
+> > > > > > > > > > > > >
+> > > > > > > > > > > > > > On Wed, Aug 29, 2018 at 12:36 PM Lexa Graham =
+<grahamlexa=40gmail.com> wrote:
+> > > > > > > > > > > > > > > Monday at 3 sounds great=21 I was hoping to=
+ meet up in person for the first session but I have a car so I can drive =
+to a convenient place near you. My computer is on it's last legs and I do=
+n't know what google hangouts would do to it haha. (Getting a new one in =
+December)
+> > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > On Tue, Aug 28, 2018 at 3:59 PM Udara Jay=
+ <devudara=40gmail.com> wrote:
+> > > > > > > > > > > > > > > > > I'm relatively free evenings & afternoo=
+ns next week too, weekends also work. Can we do the first session on next=
+ Monday at 3pm=3F (3rd Sep).
+> > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > Hoping we can do it over google hangout=
+s=3F
+> > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > Let me know.
+> > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > Cheers,
+> > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > Udara Jayawardena
+> > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > c:=C2=A0=C2=A0+1 519 697 7591
+> > > > > > > > > > > > > > > > > w:=C2=A0https://udara.io
+> > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > On Tue, Aug 28, 2018 at 3:18 PM Lexa =
+Graham <grahamlexa=40gmail.com> wrote:
+> > > > > > > > > > > > > > > > > > > Great=21 Next week I'm relatively f=
+ree during the days and some evenings, but weekends could work too=21 Wha=
+t is your schedule like=3F
+> > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > And yeah, a custom coded site not r=
+unning on wordpress.
+> > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > On Mon, Aug 27, 2018 at 7:11 PM U=
+dara Jay <devudara=40gmail.com> wrote:
+> > > > > > > > > > > > > > > > > > > > > Hey Lexa=21
+> > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > Yup I can make some time for yo=
+u next week what days & general times work for you=3F; it=E2=80=99s perfe=
+ct that you have the domain.
+> > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > So right now you have a custom =
+coded site not running on wordpress yea=3F
+> > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > Cheers,
+> > > > > > > > > > > > > > > > > > > > > On Aug 27, 2018, 2:18 PM -0400,=
+ Lexa Graham <grahamlexa=40gmail.com>, wrote:
+> > > > > > > > > > > > > > > > > > > > > > I tried Wix at first but it w=
+asn't as customizable as I needed, and I figured Wordpress would be simil=
+ar so I found a free template and modified it, and then started running i=
+nto coding headaches haha. Also wordpress didn't have the domain I wanted=
+ (I bought the .com from godaddy already though). That sounds great=21 Do=
+ you have time for two two-hour sessions in the next week or so=3F
+> > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > On =46ri, Aug 24, 2018 at 7=
+:05 PM Udara Jay <devudara=40gmail.com> wrote:
+> > > > > > > > > > > > > > > > > > > > > > > > Hey Lexa,
+> > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > > Happy to site down with y=
+ou sometime and guide you through. =46irst off though I was wondering if =
+you're doing all this with WordPress=3F Because all the problems you're d=
+escribing; WordPress can solve=3F
+> > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > > I usually freelance at a =
+much higher rate, but I can do =2425/hr if that works for you=3F
+> > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > > Let me know=21
+> > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > > Udara Jayawardena
+> > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > > c:=C2=A0=C2=A0+1 519 697 =
+7591
+> > > > > > > > > > > > > > > > > > > > > > > > w:=C2=A0https://udara.io
+> > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > > > On =46ri, Aug 24, 2018 =
+at 2:15 PM Lexa Graham <grahamlexa=40gmail.com> wrote:
+> > > > > > > > > > > > > > > > > > > > > > > > > > Hi Udara=21
+> > > > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > > > > I'm working on a sati=
+rical science website (like the Onion but for science, based on nature.co=
+m) mostly from scratch/templates, and while I have the structure and desi=
+gn of the website almost to where I want it, I am looking for someone to =
+sit down with me for a few hours and work with me on the following:
+> > > > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > > > > -how to generate SEO-=
+friendly links to pages (i.e website.com/this-is-the-title)
+> > > > > > > > > > > > > > > > > > > > > > > > > > -how to generate page=
+s/links dynamically for single posts and authors
+> > > > > > > > > > > > > > > > > > > > > > > > > > -how to possibly have=
+ multiple authors linked to a post
+> > > > > > > > > > > > > > > > > > > > > > > > > > -cleaning up code i h=
+ave modified from a template
+> > > > > > > > > > > > > > > > > > > > > > > > > > -finding a cleaner wa=
+y to code so many database links
+> > > > > > > > > > > > > > > > > > > > > > > > > > -fixing the admin art=
+icle input page (database gets updated but next page shows object error)
+> > > > > > > > > > > > > > > > > > > > > > > > > > -teaching me best pra=
+ctice methods of coding for security, quick loading times, uploading a si=
+te map etc etc
+> > > > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > > > > I used to code basic =
+HTML as a teenager, and I'm starting to get a good handle on CSS and php =
+from watching Lynda.com and other youtube videos, but I'm finding that th=
+e database functions are a bit of a headache.
+> > > > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > > > > Please let me know if=
+ this sounds like something you'd be interested in and what your rates ar=
+e=21
+> > > > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > > > > Thanks=21
+> > > > > > > > > > > > > > > > > > > > > > > > > > Lexa
+> > > > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > > > > > On Thu, Aug 23, 201=
+8 at 6:10 PM =46anny R-K <fannyyrk=40gmail.com> wrote:
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > Lexa, meet Udara.=
+ Udara, meet Lexa=21
+> > > > > > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > Lexa is a comedia=
+n friend of mine, and Udara is a full-stack developer I met this summer a=
+t Shopify.
+> > > > > > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > Lexa is looking f=
+or some support as she puts together her website. She can tell you more a=
+bout the specifics of what she needs help with and hopefully you two can =
+figure out whether the project makes sense to collaborate on.
+> > > > > > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > Let me know if I =
+can help at all, otherwise I leave it to you both to take it from here.
+> > > > > > > > > > > > > > > > > > > > > > > > > > > >
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > Thanks=21
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > =46anny
+
+--5b917b08_74b0dc51_8ebb
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+<html xmlns=3D=22http://www.w3.org/1999/xhtml=22>
+<head>
+<title></title>
+</head>
+<body>
+<div name=3D=22messageBodySection=22 style=3D=22font-size: 14px; font-fam=
+ily: -apple-system, BlinkMacSystem=46ont, sans-serif;=22>Hey,&=23160;
+<div><br /></div>
+<div>Hah I can Imagine, yea - for permissions 755 in should have worked, =
+but maybe it=E2=80=99s just a weird thing about local. Should work when y=
+ou put it online. Let me know if you run into any trouble then.&=23160;</=
+div>
+<div><br /></div>
+<div>lol it will be a bit slow to get a hang of the wordpress theme struc=
+ture=21</div>
+<div><br /></div>
+<div>Cheers,&=23160;</div>
+</div>
+<div name=3D=22messageSignatureSection=22 style=3D=22font-size: 14px; fon=
+t-family: -apple-system, BlinkMacSystem=46ont, sans-serif;=22><br />
+<b>Udara Jay</b>
+<div style=3D=22color:=23999; font-size:0.9em; margin-top:5px;=22>
+<div>m: +1 519 697 7591</div>
+<div>w: <a href=3D=22https://udara.io=22>udara.io</a></div>
+</div>
+</div>
+<div name=3D=22messageReplySection=22 style=3D=22font-size: 14px; font-fa=
+mily: -apple-system, BlinkMacSystem=46ont, sans-serif;=22>On Sep 5, 2018,=
+ 3:48 PM -0400, Lexa Graham &lt;grahamlexa=40gmail.com&gt;, wrote:<br />
+<blockquote type=3D=22cite=22 style=3D=22margin: 5px 5px; padding-left: 1=
+0px; border-left: thin solid =231abc9c;=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>Haha no worries, I took the day off out of frustrati=
+on anyway=21 I eventually figured out how to&=23160;connect to the server=
+ (i couldn't change permissions without doing so anyway) but changing the=
+ permissions to 755 and 766 didn't work (for directories, files are 644) =
+so I had to do the dreaded 777, which finally got it working. I'm going t=
+o change the permissions back once I upload it to the domain, that should=
+ work right=3F&=23160;<br /></div>
+<div dir=3D=22ltr=22><br /></div>
+<div>Thanks again=21 Now I'm just trying to figure out the theme's css st=
+uff, it's going alright so far haha just slow.</div>
+</div>
+<br />
+<div class=3D=22gmail=5Fquote=22>
+<div dir=3D=22ltr=22>On Wed, Sep 5, 2018 at 8:08 AM Udara Jay &lt;<a href=
+=3D=22mailto:devudara=40gmail.com=22>devudara=40gmail.com</a>&gt; wrote:<=
+br /></div>
+<blockquote class=3D=22gmail=5Fquote=22 style=3D=22margin: 5px 5px; paddi=
+ng-left: 10px; border-left: thin solid =23e67e22;=22>
+<div>
+<div name=3D=22messageBodySection=22>Hey Lexa,<br />
+<br />
+Sorry for the late reply - for filezilla you can=E2=80=99t connect to you=
+r local server; but if filezilla<br />
+is open with no server connected you can just connect to it by browsing t=
+o the LAMP drive (using the left size portion on your screenshot).<br />
+<br />
+Also file permissions should only affect the wp-contents folder; so if yo=
+u change the permissions for that it should work.<br />
+<br />
+Let me know if that works=3F<br />
+<br />
+Best,</div>
+<div name=3D=22messageReplySection=22>On Sep 3, 2018, 7:10 PM -0400, Lexa=
+ Graham &lt;<a href=3D=22mailto:grahamlexa=40gmail.com=22 target=3D=22=5F=
+blank=22>grahamlexa=40gmail.com</a>&gt;, wrote:<br />
+<blockquote type=3D=22cite=22 style=3D=22margin: 5px 5px; padding-left: 1=
+0px; border-left: thin solid =233498db;=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>Hi Udara,</div>
+<div dir=3D=22ltr=22><br /></div>
+<div>Wordpress is as frustrating as i imagined haha.</div>
+<div dir=3D=22ltr=22><br /></div>
+<div dir=3D=22ltr=22>Ok so I can't upload <i>any</i> media because of thi=
+s error:</div>
+<div dir=3D=22ltr=22><br /></div>
+<div dir=3D=22ltr=22>=22Unable to create directory wp-content/uploads/. I=
+s its parent directory writable by the server=3F=22&=23160;</div>
+<div dir=3D=22ltr=22><br /></div>
+<div>1. i added a folder named uploads in wp-content. did not work.</div>=
+
+<div>2. through =22get info=22 i&=23160;changed the permissions to =22rea=
+d &amp; write=22 on everything (except public) for htdocs/wordpress and a=
+ll the&=23160;contained folders. did not work.&=23160;</div>
+<div dir=3D=22ltr=22>3. i downloaded filezilla to change the permissions,=
+ but i can't connect to the server because i don't know the host or the u=
+sername/password.&=23160;</div>
+<div dir=3D=22ltr=22><br /></div>
+<div dir=3D=22ltr=22>Most sites say just put your domain, but i haven't c=
+onnected my domain to wordpress yet. Plus i'm just trying to&=23160;chang=
+e the wordpress permissions, but it's located in my htdocs folder, which =
+(i assume) is the folder who's permission i have to&=23160;change.<br /><=
+/div>
+<div dir=3D=22ltr=22><br /></div>
+<div>How&=23160;can i connect the server&=23160;to =46ileZilla to&=23160;=
+change the permissions=3F <img src=3D=22data:,=22 alt=3D=22filezille.jpeg=
+=22 width=3D=22472=22 height=3D=22327=22 class=3D=22existing-inline-image=
+=22 /></div>
+<div><br /></div>
+<div>it seems insane that i would have to go through this process just to=
+ upload an image.</div>
+<div dir=3D=22ltr=22>
+<div><br /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br />
+<div class=3D=22gmail=5Fquote=22>
+<div dir=3D=22ltr=22>On Mon, Sep 3, 2018 at 3:00 PM Lexa Graham &lt;<a hr=
+ef=3D=22mailto:grahamlexa=40gmail.com=22 target=3D=22=5Fblank=22>grahamle=
+xa=40gmail.com</a>&gt; wrote:<br /></div>
+<blockquote class=3D=22gmail=5Fquote=22 style=3D=22margin: 5px 5px; paddi=
+ng-left: 10px; border-left: thin solid =23d35400;=22>
+<div dir=3D=22ltr=22>Got it=21 I signed on and everything, see you shortl=
+y=21<br /></div>
+<br />
+<div class=3D=22gmail=5Fquote=22>
+<div dir=3D=22ltr=22>On Mon, Sep 3, 2018 at 11:24 AM Udara Jay &lt;<a hre=
+f=3D=22mailto:devudara=40gmail.com=22 target=3D=22=5Fblank=22>devudara=40=
+gmail.com</a>&gt; wrote:<br /></div>
+<blockquote class=3D=22gmail=5Fquote=22 style=3D=22margin: 5px 5px; paddi=
+ng-left: 10px; border-left: thin solid =2334495e;=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>Hey Lexa=21
+<div><br /></div>
+<div>Here's a link to the chat:&=23160;<a href=3D=22https://hangouts.goog=
+le.com/call/kXe3=462hjC3dkUbks38WYAAEE=22 target=3D=22=5Fblank=22>https:/=
+/hangouts.google.com/call/kXe3=462hjC3dkUbks38WYAAEE</a>&=23160;(You can =
+just click it at 3pm and hopefully it should work). Otherwise my phone is=
+ <a dir=3D=22ltr=22 href=3D=22tel:519%20697%207591=22 target=3D=22=5Fblan=
+k=22>519 697 7591</a> if it gives you any trouble. I'll be online at 3pm.=
+&=23160;</div>
+<div><br /></div>
+<div>Cheers,&=23160;</div>
+<div><br clear=3D=22all=22 />
+<div>
+<div dir=3D=22ltr=22 class=3D=22m=5F-586385350103159484m=5F55633729766614=
+23626m=5F3180105368166758302gmail=5Fsignature=22>
+<div dir=3D=22ltr=22>
+<div>
+<div dir=3D=22ltr=22>
+<div>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22><font size=3D=222=22 color=3D=22=23444444=22><span s=
+tyle=3D=22background-color:rgb(255,255,255)=22><b>Udara Jayawardena</b></=
+span></font></div>
+<div dir=3D=22ltr=22><font size=3D=222=22 color=3D=22=23444444=22><span s=
+tyle=3D=22background-color:rgb(255,255,255)=22><b><br /></b></span></font=
+></div>
+<div dir=3D=22ltr=22>
+<div><font size=3D=221=22><font color=3D=22=236=46A8DC=22></font></font><=
+/div>
+<div><span style=3D=22color:rgb(153,153,153);font-size:x-small=22>c:&=231=
+60;</span><font color=3D=22=23999999=22 size=3D=221=22>&=23160;<a dir=3D=22=
+ltr=22 href=3D=22tel:+1%20519%20697%207591=22 target=3D=22=5Fblank=22>+1 =
+519 697 7591</a></font><br /></div>
+<div><font size=3D=221=22><font color=3D=22=23999999=22>w:</font><font co=
+lor=3D=22=233D85C6=22>&=23160;</font></font><a href=3D=22https://udara.io=
+=22 target=3D=22=5Fblank=22><font size=3D=221=22 color=3D=22=236=46A8DC=22=
+>https://udara.io</font></a></div>
+<div><br /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br /></div>
+</div>
+</div>
+<br />
+<div class=3D=22gmail=5Fquote=22>
+<div dir=3D=22ltr=22>On =46ri, Aug 31, 2018 at 10:12 PM Udara Jay &lt;<a =
+href=3D=22mailto:devudara=40gmail.com=22 target=3D=22=5Fblank=22>devudara=
+=40gmail.com</a>&gt; wrote:<br /></div>
+<blockquote class=3D=22gmail=5Fquote=22 style=3D=22margin: 5px 5px; paddi=
+ng-left: 10px; border-left: thin solid =232ecc71;=22>
+<div>
+<div name=3D=22messageBodySection=22>Hey=21 Yup still works for me :) You=
+ don=E2=80=99t need to download anything - I=E2=80=99ll send you a link a=
+nd it=E2=80=99ll just open on your browser.<br />
+<br />
+Cheers=21</div>
+<div name=3D=22messageReplySection=22>On Aug 30, 2018, 3:28 PM -0400, Lex=
+a Graham &lt;<a href=3D=22mailto:grahamlexa=40gmail.com=22 target=3D=22=5F=
+blank=22>grahamlexa=40gmail.com</a>&gt;, wrote:<br />
+<blockquote type=3D=22cite=22 style=3D=22margin: 5px 5px; padding-left: 1=
+0px; border-left: thin solid =239b59b6;=22>
+<div dir=3D=22ltr=22>ahaha no worries=21 do i have to download anything f=
+or google hangouts at all=3F If not, great, we're still on for Monday, ri=
+ght=3F</div>
+<br />
+<div class=3D=22gmail=5Fquote=22>
+<div dir=3D=22ltr=22>On Wed, Aug 29, 2018 at 1:10 PM Udara Jay &lt;<a hre=
+f=3D=22mailto:devudara=40gmail.com=22 target=3D=22=5Fblank=22>devudara=40=
+gmail.com</a>&gt; wrote:<br /></div>
+<blockquote class=3D=22gmail=5Fquote=22 style=3D=22margin: 5px 5px; paddi=
+ng-left: 10px; border-left: thin solid =23e74c3c;=22>
+<div dir=3D=22ltr=22>Aw man, I was just working in Toronto for the summer=
+ and just left for London, so in-person prolly won't work out :/
+<div><br /></div>
+<div><br clear=3D=22all=22 />
+<div>
+<div dir=3D=22ltr=22 class=3D=22m=5F-586385350103159484m=5F55633729766614=
+23626m=5F3180105368166758302m=5F-891753427967490467m=5F484496943036743717=
+2gmail=5Fsignature=22 data-smartmail=3D=22gmail=5Fsignature=22>
+<div dir=3D=22ltr=22>
+<div>
+<div dir=3D=22ltr=22>
+<div>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22><font size=3D=222=22 color=3D=22=23444444=22><span s=
+tyle=3D=22background-color:rgb(255,255,255)=22><b>Udara Jayawardena</b></=
+span></font></div>
+<div dir=3D=22ltr=22><font size=3D=222=22 color=3D=22=23444444=22><span s=
+tyle=3D=22background-color:rgb(255,255,255)=22><b><br /></b></span></font=
+></div>
+<div dir=3D=22ltr=22>
+<div><font size=3D=221=22><font color=3D=22=236=46A8DC=22></font></font><=
+/div>
+<div><span style=3D=22color:rgb(153,153,153);font-size:x-small=22>c:&=231=
+60;</span><font color=3D=22=23999999=22 size=3D=221=22>&=23160;<a dir=3D=22=
+ltr=22 href=3D=22tel:+1%20519%20697%207591=22 target=3D=22=5Fblank=22>+1 =
+519 697 7591</a></font><br /></div>
+<div><font size=3D=221=22><font color=3D=22=23999999=22>w:</font><font co=
+lor=3D=22=233D85C6=22>&=23160;</font></font><a href=3D=22https://udara.io=
+=22 target=3D=22=5Fblank=22><font size=3D=221=22 color=3D=22=236=46A8DC=22=
+>https://udara.io</font></a></div>
+<div><br /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br /></div>
+</div>
+<br />
+<div class=3D=22gmail=5Fquote=22>
+<div dir=3D=22ltr=22>On Wed, Aug 29, 2018 at 12:36 PM Lexa Graham &lt;<a =
+href=3D=22mailto:grahamlexa=40gmail.com=22 target=3D=22=5Fblank=22>graham=
+lexa=40gmail.com</a>&gt; wrote:<br /></div>
+<blockquote class=3D=22gmail=5Fquote=22 style=3D=22margin: 5px 5px; paddi=
+ng-left: 10px; border-left: thin solid =231abc9c;=22>
+<div>
+<div dir=3D=22auto=22>Monday at 3 sounds great=21 I was hoping to meet up=
+ in person for the first session but I have a car so I can drive to a con=
+venient place near you. My computer is on it's last legs and I don't know=
+ what google hangouts would do to it haha. (Getting a new one in December=
+)</div>
+</div>
+<div><br />
+<div class=3D=22gmail=5Fquote=22>
+<div dir=3D=22ltr=22>On Tue, Aug 28, 2018 at 3:59 PM Udara Jay &lt;<a hre=
+f=3D=22mailto:devudara=40gmail.com=22 target=3D=22=5Fblank=22>devudara=40=
+gmail.com</a>&gt; wrote:<br /></div>
+<blockquote class=3D=22gmail=5Fquote=22 style=3D=22margin: 5px 5px; paddi=
+ng-left: 10px; border-left: thin solid =23e67e22;=22>
+<div dir=3D=22ltr=22>
+<div>I'm relatively free evenings &amp; afternoons next week too, weekend=
+s also work. Can we do the first session on next Monday at 3pm=3F (3rd Se=
+p).</div>
+<div><br /></div>
+<div>Hoping we can do it over google hangouts=3F&=23160;</div>
+<div><br /></div>
+<div>Let me know.</div>
+<div><br /></div>
+<div>Cheers,&=23160;</div>
+</div>
+<div dir=3D=22ltr=22><br clear=3D=22all=22 />
+<div>
+<div dir=3D=22ltr=22 class=3D=22m=5F-586385350103159484m=5F55633729766614=
+23626m=5F3180105368166758302m=5F-891753427967490467m=5F484496943036743717=
+2m=5F3386301009539992209m=5F1985262271940324688gmail=5Fsignature=22 data-=
+smartmail=3D=22gmail=5Fsignature=22>
+<div dir=3D=22ltr=22>
+<div>
+<div dir=3D=22ltr=22>
+<div>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22><font size=3D=222=22 color=3D=22=23444444=22><span s=
+tyle=3D=22background-color:rgb(255,255,255)=22><b>Udara Jayawardena</b></=
+span></font></div>
+<div dir=3D=22ltr=22><font size=3D=222=22 color=3D=22=23444444=22><span s=
+tyle=3D=22background-color:rgb(255,255,255)=22><b><br /></b></span></font=
+></div>
+<div dir=3D=22ltr=22>
+<div><font size=3D=221=22><font color=3D=22=236=46A8DC=22></font></font><=
+/div>
+<div><span style=3D=22color:rgb(153,153,153);font-size:x-small=22>c:&=231=
+60;</span><font color=3D=22=23999999=22 size=3D=221=22>&=23160;<a dir=3D=22=
+ltr=22 href=3D=22tel:+1%20519%20697%207591=22 target=3D=22=5Fblank=22>+1 =
+519 697 7591</a></font><br /></div>
+<div><font size=3D=221=22><font color=3D=22=23999999=22>w:</font><font co=
+lor=3D=22=233D85C6=22>&=23160;</font></font><a href=3D=22https://udara.io=
+=22 target=3D=22=5Fblank=22><font size=3D=221=22 color=3D=22=236=46A8DC=22=
+>https://udara.io</font></a></div>
+<div><br /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br /></div>
+<br />
+<div class=3D=22gmail=5Fquote=22>
+<div dir=3D=22ltr=22>On Tue, Aug 28, 2018 at 3:18 PM Lexa Graham &lt;<a h=
+ref=3D=22mailto:grahamlexa=40gmail.com=22 target=3D=22=5Fblank=22>grahaml=
+exa=40gmail.com</a>&gt; wrote:<br /></div>
+<blockquote class=3D=22gmail=5Fquote=22 style=3D=22margin: 5px 5px; paddi=
+ng-left: 10px; border-left: thin solid =233498db;=22>
+<div dir=3D=22ltr=22>Great=21 Next week I'm relatively free during the da=
+ys and some evenings, but weekends could work too=21 What is your schedul=
+e like=3F
+<div><br /></div>
+<div>And yeah, a custom coded site not running on wordpress.</div>
+</div>
+<br />
+<div class=3D=22gmail=5Fquote=22>
+<div dir=3D=22ltr=22>On Mon, Aug 27, 2018 at 7:11 PM Udara Jay &lt;<a hre=
+f=3D=22mailto:devudara=40gmail.com=22 target=3D=22=5Fblank=22>devudara=40=
+gmail.com</a>&gt; wrote:<br /></div>
+<blockquote class=3D=22gmail=5Fquote=22 style=3D=22margin: 5px 5px; paddi=
+ng-left: 10px; border-left: thin solid =23d35400;=22>
+<div>
+<div name=3D=22messageBodySection=22>Hey Lexa=21<br />
+<br />
+Yup I can make some time for you next week what days &amp; general times =
+work for you=3F; it=E2=80=99s perfect that you have the domain.<br />
+<br />
+So right now you have a custom coded site not running on wordpress yea=3F=
+<br />
+<br />
+Cheers,</div>
+<div name=3D=22messageReplySection=22>On Aug 27, 2018, 2:18 PM -0400, Lex=
+a Graham &lt;<a href=3D=22mailto:grahamlexa=40gmail.com=22 target=3D=22=5F=
+blank=22>grahamlexa=40gmail.com</a>&gt;, wrote:<br />
+<blockquote type=3D=22cite=22 style=3D=22margin: 5px 5px; padding-left: 1=
+0px; border-left: thin solid =2334495e;=22>
+<div dir=3D=22ltr=22>I tried Wix at first but it wasn't as customizable a=
+s I needed, and I figured Wordpress would be similar so I found a free te=
+mplate and modified it, and then started running into coding headaches ha=
+ha. Also wordpress didn't have the domain I wanted (I bought the .com fro=
+m godaddy already though). That sounds great=21 Do you have time for two =
+two-hour sessions in the next week or so=3F</div>
+<br />
+<div class=3D=22gmail=5Fquote=22>
+<div dir=3D=22ltr=22>On =46ri, Aug 24, 2018 at 7:05 PM Udara Jay &lt;<a h=
+ref=3D=22mailto:devudara=40gmail.com=22 target=3D=22=5Fblank=22>devudara=40=
+gmail.com</a>&gt; wrote:<br /></div>
+<blockquote class=3D=22gmail=5Fquote=22 style=3D=22margin: 5px 5px; paddi=
+ng-left: 10px; border-left: thin solid =232ecc71;=22>
+<div dir=3D=22ltr=22>Hey Lexa,&=23160;
+<div><br /></div>
+<div>Happy to site down with you sometime and guide you through. =46irst =
+off though I was wondering if you're doing all this with WordPress=3F Bec=
+ause all the problems you're describing; WordPress can solve=3F</div>
+<div><br /></div>
+<div>I usually freelance at a much higher rate, but I can do =2425/hr if =
+that works for you=3F&=23160;</div>
+<div><br /></div>
+<div>Let me know=21</div>
+<div><br clear=3D=22all=22 />
+<div>
+<div dir=3D=22ltr=22 class=3D=22m=5F-586385350103159484m=5F55633729766614=
+23626m=5F3180105368166758302m=5F-891753427967490467m=5F484496943036743717=
+2m=5F3386301009539992209m=5F1985262271940324688m=5F-881152071811969835m=5F=
+-4416450358048689418m=5F2568960004215006168gmail=5Fsignature=22 data-smar=
+tmail=3D=22gmail=5Fsignature=22>
+<div dir=3D=22ltr=22>
+<div>
+<div dir=3D=22ltr=22>
+<div>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22>
+<div dir=3D=22ltr=22><font size=3D=222=22 color=3D=22=23444444=22><span s=
+tyle=3D=22background-color:rgb(255,255,255)=22><b>Udara Jayawardena</b></=
+span></font></div>
+<div dir=3D=22ltr=22><font size=3D=222=22 color=3D=22=23444444=22><span s=
+tyle=3D=22background-color:rgb(255,255,255)=22><b><br /></b></span></font=
+></div>
+<div dir=3D=22ltr=22>
+<div><font size=3D=221=22><font color=3D=22=236=46A8DC=22></font></font><=
+/div>
+<div><span style=3D=22color:rgb(153,153,153);font-size:x-small=22>c:&=231=
+60;</span><font color=3D=22=23999999=22 size=3D=221=22>&=23160;<a dir=3D=22=
+ltr=22 href=3D=22tel:+1%20519%20697%207591=22 target=3D=22=5Fblank=22>+1 =
+519 697 7591</a></font><br /></div>
+<div><font size=3D=221=22><font color=3D=22=23999999=22>w:</font><font co=
+lor=3D=22=233D85C6=22>&=23160;</font></font><a href=3D=22https://udara.io=
+=22 target=3D=22=5Fblank=22><font size=3D=221=22 color=3D=22=236=46A8DC=22=
+>https://udara.io</font></a></div>
+<div><br /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br /></div>
+</div>
+<br />
+<div class=3D=22gmail=5Fquote=22>
+<div dir=3D=22ltr=22>On =46ri, Aug 24, 2018 at 2:15 PM Lexa Graham &lt;<a=
+ href=3D=22mailto:grahamlexa=40gmail.com=22 target=3D=22=5Fblank=22>graha=
+mlexa=40gmail.com</a>&gt; wrote:<br /></div>
+<blockquote class=3D=22gmail=5Fquote=22 style=3D=22margin: 5px 5px; paddi=
+ng-left: 10px; border-left: thin solid =239b59b6;=22>
+<div dir=3D=22ltr=22>Hi Udara=21
+<div><br /></div>
+<div>I'm working on a satirical science website (like the Onion but for s=
+cience, based on <a href=3D=22http://nature.com=22 target=3D=22=5Fblank=22=
+>nature.com</a>) mostly from scratch/templates, and while I have the stru=
+cture and design of the website almost to where I want it, I am looking f=
+or someone to sit down with me for a few hours and work with me on the fo=
+llowing:</div>
+<div><br /></div>
+<div>-how to generate SEO-friendly links to pages (i.e <a href=3D=22http:=
+//website.com/this-is-the-title=22 target=3D=22=5Fblank=22>website.com/th=
+is-is-the-title</a>)</div>
+<div>-how to generate pages/links dynamically for single posts and author=
+s</div>
+<div>-how to possibly have multiple authors linked to a post</div>
+<div>-cleaning up code i have modified from a template</div>
+<div>-finding a cleaner way to code so many database links</div>
+<div>-fixing the admin article input page (database gets updated but next=
+ page shows object error)</div>
+<div>-teaching me best practice methods of coding for security, quick loa=
+ding times, uploading a site map etc etc</div>
+<div><br /></div>
+<div>I used to code basic HTML as a teenager, and I'm starting to get a g=
+ood handle on CSS and php from watching Lynda.com and other youtube video=
+s, but I'm finding that the database functions are a bit of a headache.</=
+div>
+<div><br /></div>
+<div>Please let me know if this sounds like something you'd be interested=
+ in and what your rates are=21</div>
+<div><br /></div>
+<div>Thanks=21<br />
+Lexa</div>
+</div>
+<br />
+<div class=3D=22gmail=5Fquote=22>
+<div dir=3D=22ltr=22>On Thu, Aug 23, 2018 at 6:10 PM =46anny R-K &lt;<a h=
+ref=3D=22mailto:fannyyrk=40gmail.com=22 target=3D=22=5Fblank=22>fannyyrk=40=
+gmail.com</a>&gt; wrote:<br /></div>
+<blockquote class=3D=22gmail=5Fquote=22 style=3D=22margin: 5px 5px; paddi=
+ng-left: 10px; border-left: thin solid =23e74c3c;=22>
+<div dir=3D=22ltr=22>Lexa, meet Udara. Udara, meet Lexa=21&=23160;
+<div><br /></div>
+<div>Lexa is a comedian friend of mine, and Udara is a full-stack develop=
+er I met this summer at Shopify.&=23160;</div>
+<div><br /></div>
+<div>Lexa is looking for some support as she puts together her website. S=
+he can tell you more about the specifics of what she needs help with and =
+hopefully you two can figure out whether the project makes sense to colla=
+borate on.&=23160;</div>
+<div><br /></div>
+<div>Let me know if I can help at all, otherwise I leave it to you both t=
+o take it from here.</div>
+<div><br /></div>
+<div>Thanks=21<br />
+=46anny</div>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+</body>
+</html>
+
+--5b917b08_74b0dc51_8ebb--
+

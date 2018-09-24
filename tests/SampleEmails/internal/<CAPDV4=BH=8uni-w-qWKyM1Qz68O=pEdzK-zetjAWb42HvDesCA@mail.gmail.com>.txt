@@ -1,0 +1,231 @@
+Delivered-To: devudara@gmail.com
+Received: by 2002:a5d:4f10:0:0:0:0:0 with SMTP id c16-v6csp5766533wru;
+        Mon, 27 Aug 2018 11:18:50 -0700 (PDT)
+X-Received: by 2002:ab0:5a52:: with SMTP id m18-v6mr9651001uad.129.1535393930169;
+        Mon, 27 Aug 2018 11:18:50 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1535393930; cv=none;
+        d=google.com; s=arc-20160816;
+        b=jB4wYYUuBjVendPKwtwUXtewXBRHIRs0OHHrVEdvDCOejVUIp9hRCT9HSWrSP9KeYu
+         XabZhmMkBpC8eNhSbEajqGGQwld0CSDGSM/zKMLWOyWfezGgJW21Rc22maICZTxAooqq
+         ljjK8galhSunjqh+5sD1g/DUPB75jJheTD3Mx6ySniVxFj+6qJvfAlwXqKjBqK+dPopY
+         Iemjay1QXOAnC4QRsA18Ud5o0wiJLpu5gxocKPQ79jD/787Prw6P6KsVO795sbjwQlwM
+         UP0Xr751PxlhiwWtBjzsJ6LiJI2zF/Z34xPJSd/UsUSQL+kzPjprL+HTLVZxUBoIrpWN
+         O68g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature:arc-authentication-results;
+        bh=DixRx/KoS8PZDIvyU/Nw/EgLtZpCLhp5yR3dkoMkM5A=;
+        b=ME7bueDiZdpxRhMKpMXJKzf4YfjjtTeFQQ1cR1wcNnRITlnkgNXuDkbKQNauu6INTQ
+         W2PbevI71xAE8IbdELyqbPzR769BubymqJPnt2SC3DWYXR8UBvfz5jgRBbaDDzCgAUov
+         1yXSxFp6/3AEffaLO5gyc3HKQSYwFmtX+JrR40ztcXn3kZtabfmGJQ0JiUTGPLC6mjB6
+         F/3p90z+N0mqVq9W6XvY82aaadcVlRe2ewbeIC5PxN9F83RC1e8iGu+/WO5J8I3OQAcw
+         4PPUGAuY8oLn+vPPHeUIMScztB+JNSd2MTEnOIkMYbOFoO41K6TlcrPkYj96/3Pc0bNu
+         Ffqg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ppqDRvuH;
+       spf=pass (google.com: domain of grahamlexa@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=grahamlexa@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <grahamlexa@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id n136-v6sor6171558vka.107.2018.08.27.11.18.50
+        for <devudara@gmail.com>
+        (Google Transport Security);
+        Mon, 27 Aug 2018 11:18:50 -0700 (PDT)
+Received-SPF: pass (google.com: domain of grahamlexa@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=ppqDRvuH;
+       spf=pass (google.com: domain of grahamlexa@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=grahamlexa@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=DixRx/KoS8PZDIvyU/Nw/EgLtZpCLhp5yR3dkoMkM5A=;
+        b=ppqDRvuHbrWJ/GV9/D7bsJG0qJuIeIm8TOsFnZL6B5iqGBc04lNLjI8gMzDa0o92v+
+         MlzsPNZCYkqx71/g4rivwQak6jV/UhLc8tfgZpFg8R8L26Ez8tJ+SYATpjjvSPHXMXhe
+         KRYy/DIhKzheuZa0E3qE3WxUuNkhRE1r32b8MCJyqX4VH9oHXtVPPIzB2zeomy2hZSOT
+         e/SHIawsMnqME2PEiG5f2fklmyi0VbNgnf4QEifTsNEMvVY/dToaNimoYwfSagD/Qu07
+         PNf/zxFPzOR758EaJScJPE4ddZipdExlz7XTecizoB9wUpXX/zXAzZxKvj2mCb0rGlRQ
+         6GKw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=DixRx/KoS8PZDIvyU/Nw/EgLtZpCLhp5yR3dkoMkM5A=;
+        b=qtQ7IBlQ34vAMUhFQIY/7XmrufraEhhZizJqwPee5d2/KCsBxkVc01p26LEzHd2Bm+
+         sn3A5gYaaUhMcwbozr3PpswLvASLyYxjdn282qr0+Vqnz7KcImlgzCxUEE/egN/umG7+
+         aR1XqxdeCVX7Yytdn+VaKgU+GvxaTZg6SlKQ+FdxpsOstvbun7csvPmelmBxBUvhK2FS
+         /DYyUDfLWDfnDYlqKCWqBGvvTcP9EkzBszIw9PmLyT4DrsqXzh5ncYoBP1lfQaxJ7dIk
+         7lrmcI9wXGlXZ16iXF67kZeLURLh+H5UKvfSLSPXOpm/oH/EkYYFkswHHTPdxSfvUvS1
+         jjjg==
+X-Gm-Message-State: APzg51CotbjOZ/QmtXrIsFlv+1G6Kn47bYb8kQ9oeMYzAaVEcrj2cV1i
+	/QRwlrtr8ymfMiZbNau7LhMuMeEpzmAz854Z27YwDg==
+X-Google-Smtp-Source: ANB0VdZIO2ccS/NrnAmBauyXBfaEqiqYN/ajqlWDydvRaViBVBHWzXewXeVypgORB8GyhDT/Cj7bXGVKrcCEybIJmnw=
+X-Received: by 2002:a1f:e86:: with SMTP id 128-v6mr8639276vko.4.1535393929596;
+ Mon, 27 Aug 2018 11:18:49 -0700 (PDT)
+MIME-Version: 1.0
+References: <CADNAVEQZRhogqza35icm-a4TU0nHXCTtYhrXSRJ3fJGQEYcFaw@mail.gmail.com>
+ <CAPDV4=AC2V7i1T-0yC+iRfGmn04NmDxxOM3pHyEV8+vB=Ocdag@mail.gmail.com> <CAPz_BHYrjnZgYtu_0K-Y7ZOb81mJ2Ns+qZN8T-wjJ4JcBnXN=Q@mail.gmail.com>
+In-Reply-To: <CAPz_BHYrjnZgYtu_0K-Y7ZOb81mJ2Ns+qZN8T-wjJ4JcBnXN=Q@mail.gmail.com>
+From: Lexa Graham <grahamlexa@gmail.com>
+Date: Mon, 27 Aug 2018 14:18:38 -0400
+Message-ID: <CAPDV4=BH=8uni-w-qWKyM1Qz68O=pEdzK-zetjAWb42HvDesCA@mail.gmail.com>
+Subject: Re: intro!
+To: Udara Jay <devudara@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000c394b705746ec17b"
+
+--000000000000c394b705746ec17b
+Content-Type: text/plain; charset="UTF-8"
+
+I tried Wix at first but it wasn't as customizable as I needed, and I
+figured Wordpress would be similar so I found a free template and modified
+it, and then started running into coding headaches haha. Also wordpress
+didn't have the domain I wanted (I bought the .com from godaddy already
+though). That sounds great! Do you have time for two two-hour sessions in
+the next week or so?
+
+On Fri, Aug 24, 2018 at 7:05 PM Udara Jay <devudara@gmail.com> wrote:
+
+> Hey Lexa,
+>
+> Happy to site down with you sometime and guide you through. First off
+> though I was wondering if you're doing all this with WordPress? Because all
+> the problems you're describing; WordPress can solve?
+>
+> I usually freelance at a much higher rate, but I can do $25/hr if that
+> works for you?
+>
+> Let me know!
+>
+> *Udara Jayawardena*
+>
+> c:  +1 519 697 7591
+> w: https://udara.io
+>
+>
+>
+> On Fri, Aug 24, 2018 at 2:15 PM Lexa Graham <grahamlexa@gmail.com> wrote:
+>
+>> Hi Udara!
+>>
+>> I'm working on a satirical science website (like the Onion but for
+>> science, based on nature.com) mostly from scratch/templates, and while I
+>> have the structure and design of the website almost to where I want it, I
+>> am looking for someone to sit down with me for a few hours and work with me
+>> on the following:
+>>
+>> -how to generate SEO-friendly links to pages (i.e
+>> website.com/this-is-the-title)
+>> -how to generate pages/links dynamically for single posts and authors
+>> -how to possibly have multiple authors linked to a post
+>> -cleaning up code i have modified from a template
+>> -finding a cleaner way to code so many database links
+>> -fixing the admin article input page (database gets updated but next page
+>> shows object error)
+>> -teaching me best practice methods of coding for security, quick loading
+>> times, uploading a site map etc etc
+>>
+>> I used to code basic HTML as a teenager, and I'm starting to get a good
+>> handle on CSS and php from watching Lynda.com and other youtube videos, but
+>> I'm finding that the database functions are a bit of a headache.
+>>
+>> Please let me know if this sounds like something you'd be interested in
+>> and what your rates are!
+>>
+>> Thanks!
+>> Lexa
+>>
+>> On Thu, Aug 23, 2018 at 6:10 PM Fanny R-K <fannyyrk@gmail.com> wrote:
+>>
+>>> Lexa, meet Udara. Udara, meet Lexa!
+>>>
+>>> Lexa is a comedian friend of mine, and Udara is a full-stack developer I
+>>> met this summer at Shopify.
+>>>
+>>> Lexa is looking for some support as she puts together her website. She
+>>> can tell you more about the specifics of what she needs help with and
+>>> hopefully you two can figure out whether the project makes sense to
+>>> collaborate on.
+>>>
+>>> Let me know if I can help at all, otherwise I leave it to you both to
+>>> take it from here.
+>>>
+>>> Thanks!
+>>> Fanny
+>>>
+>>
+
+--000000000000c394b705746ec17b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">I tried Wix at first but it wasn&#39;t as customizable as =
+I needed, and I figured Wordpress would be similar so I found a free templa=
+te and modified it, and then started running into coding headaches haha. Al=
+so wordpress didn&#39;t have the domain I wanted (I bought the .com from go=
+daddy already though). That sounds great! Do you have time for two two-hour=
+ sessions in the next week or so?</div><br><div class=3D"gmail_quote"><div =
+dir=3D"ltr">On Fri, Aug 24, 2018 at 7:05 PM Udara Jay &lt;<a href=3D"mailto=
+:devudara@gmail.com">devudara@gmail.com</a>&gt; wrote:<br></div><blockquote=
+ class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc soli=
+d;padding-left:1ex"><div dir=3D"ltr">Hey Lexa,=C2=A0<div><br></div><div>Hap=
+py to site down with you sometime and guide you through. First off though I=
+ was wondering if you&#39;re doing all this with WordPress? Because all the=
+ problems you&#39;re describing; WordPress can solve?</div><div><br></div><=
+div>I usually freelance at a much higher rate, but I can do $25/hr if that =
+works for you?=C2=A0</div><div><br></div><div>Let me know!</div><div><br cl=
+ear=3D"all"><div><div dir=3D"ltr" class=3D"m_2568960004215006168gmail_signa=
+ture" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=3D"=
+ltr"><div><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"lt=
+r"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><font size=3D"2" colo=
+r=3D"#444444"><span style=3D"background-color:rgb(255,255,255)"><b>Udara Ja=
+yawardena</b></span></font></div><div dir=3D"ltr"><font size=3D"2" color=3D=
+"#444444"><span style=3D"background-color:rgb(255,255,255)"><b><br></b></sp=
+an></font></div><div dir=3D"ltr"><div><font size=3D"1"><font color=3D"#6fa8=
+dc"></font></font></div><div><span style=3D"color:rgb(153,153,153);font-siz=
+e:x-small">c:=C2=A0</span><font color=3D"#999999" size=3D"1">=C2=A0+1 519 6=
+97 7591</font><br></div><div><font size=3D"1"><font color=3D"#999999">w:</f=
+ont><font color=3D"#3d85c6">=C2=A0</font></font><a href=3D"https://udara.io=
+" target=3D"_blank"><font size=3D"1" color=3D"#6fa8dc">https://udara.io</fo=
+nt></a></div><div><br></div></div></div></div></div></div></div></div></div=
+></div></div></div></div></div><br></div></div><br><div class=3D"gmail_quot=
+e"><div dir=3D"ltr">On Fri, Aug 24, 2018 at 2:15 PM Lexa Graham &lt;<a href=
+=3D"mailto:grahamlexa@gmail.com" target=3D"_blank">grahamlexa@gmail.com</a>=
+&gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 =
+0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr">Hi Uda=
+ra!<div><br></div><div>I&#39;m working on a satirical science website (like=
+ the Onion but for science, based on <a href=3D"http://nature.com" target=
+=3D"_blank">nature.com</a>) mostly from scratch/templates, and while I have=
+ the structure and design of the website almost to where I want it, I am lo=
+oking for someone to sit down with me for a few hours and work with me on t=
+he following:</div><div><br></div><div>-how to generate SEO-friendly links =
+to pages (i.e <a href=3D"http://website.com/this-is-the-title" target=3D"_b=
+lank">website.com/this-is-the-title</a>)</div><div>-how to generate pages/l=
+inks dynamically for single posts and authors</div><div>-how to possibly ha=
+ve multiple authors linked to a post</div><div>-cleaning up code i have mod=
+ified from a template</div><div>-finding a cleaner way to code so many data=
+base links</div><div>-fixing the admin article input page (database gets up=
+dated but next page shows object error)</div><div>-teaching me best practic=
+e methods of coding for security, quick loading times, uploading a site map=
+ etc etc</div><div><br></div><div>I used to code basic HTML as a teenager, =
+and I&#39;m starting to get a good handle on CSS and php from watching Lynd=
+a.com and other youtube videos, but I&#39;m finding that the database funct=
+ions are a bit of a headache.</div><div><br></div><div>Please let me know i=
+f this sounds like something you&#39;d be interested in and what your rates=
+ are!</div><div><br></div><div>Thanks!<br>Lexa</div></div><br><div class=3D=
+"gmail_quote"><div dir=3D"ltr">On Thu, Aug 23, 2018 at 6:10 PM Fanny R-K &l=
+t;<a href=3D"mailto:fannyyrk@gmail.com" target=3D"_blank">fannyyrk@gmail.co=
+m</a>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=3D"margin=
+:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr">L=
+exa, meet Udara. Udara, meet Lexa!=C2=A0<div><br></div><div>Lexa is a comed=
+ian friend of mine, and Udara is a full-stack developer I met this summer a=
+t Shopify.=C2=A0</div><div><br></div><div>Lexa is looking for some support =
+as she puts together her website. She can tell you more about the specifics=
+ of what she needs help with and hopefully you two can figure out whether t=
+he project makes sense to collaborate on.=C2=A0</div><div><br></div><div>Le=
+t me know if I can help at all, otherwise I leave it to you both to take it=
+ from here.</div><div><br></div><div>Thanks!<br>Fanny</div></div>
+</blockquote></div>
+</blockquote></div>
+</blockquote></div>
+
+--000000000000c394b705746ec17b--
